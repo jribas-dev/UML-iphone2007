@@ -8,6 +8,7 @@ import br.org.webbrowser.WebBrowser;
 public class Main {
     public static void main(String[] args) {
         IPhone2007 iphone = new IPhone2007();
+        iphone.Startup();
 
         ((CellPhone) iphone).call("+5516992135544");
         ((CellPhone) iphone).answer();
@@ -20,5 +21,7 @@ public class Main {
         ((WebBrowser) iphone).newProcess();
         ((WebBrowser) iphone).showPage();
         ((WebBrowser) iphone).refreshPage();
+
+        iphone.Shutdown();
     }
 }

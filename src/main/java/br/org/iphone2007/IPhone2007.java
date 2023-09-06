@@ -5,6 +5,12 @@ import br.org.midiaplayer.MidiaPlayer;
 import br.org.webbrowser.WebBrowser;
 
 public class IPhone2007 implements CellPhone, MidiaPlayer, WebBrowser {
+    public void Startup() {
+        System.out.println("Operation System has started");
+    }
+    public void Shutdown() {
+        System.out.println("Operation System has been stopped");
+    }
     @Override
     public void call(String number) {
         System.out.println("Calling "+number+ " from iPhone");
