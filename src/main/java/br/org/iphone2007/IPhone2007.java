@@ -4,7 +4,7 @@ import br.org.cellphone.CellPhone;
 import br.org.midiaplayer.MidiaPlayer;
 import br.org.webbrowser.WebBrowser;
 
-public class iPhone2007 implements CellPhone, MidiaPlayer, WebBrowser {
+public class IPhone2007 implements CellPhone, MidiaPlayer, WebBrowser {
     @Override
     public void call(String number) {
         System.out.println("Calling "+number+ " from iPhone");
